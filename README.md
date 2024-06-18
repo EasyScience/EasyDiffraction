@@ -1,23 +1,25 @@
-[101]: https://img.shields.io/badge/EasyDiffractionApp-blue?style=flat-square
+[101]: https://img.shields.io/badge/App-blue?style=flat-square
 [901]: https://github.com/easyscience/easyDiffractionApp
-[102]: https://img.shields.io/badge/EasyDiffractionBeta-blue?style=flat-square
+[102]: https://img.shields.io/badge/Beta-blue?style=flat-square
 [902]: https://github.com/easyscience/EasyDiffractionBeta
-[103]: https://img.shields.io/badge/EasyDiffractionLib-blue?style=flat-square
+[103]: https://img.shields.io/badge/Lib-blue?style=flat-square
 [903]: https://github.com/easyscience/EasyDiffractionLib
-[104]: https://img.shields.io/badge/EasyDiffractionWww-olive?style=flat-square
+[104]: https://img.shields.io/badge/Www-olive?style=flat-square
 [904]: https://github.com/easyscience/EasyDiffractionWww
-[105]: https://img.shields.io/badge/EasyDiffractionAppDocs-olive?style=flat-square
+[105]: https://img.shields.io/badge/App_Docs-olive?style=flat-square
 [905]: https://github.com/easyscience/EasyDiffractionAppDocs
-[106]: https://img.shields.io/badge/EasyDiffractionLibDocs-olive?style=flat-square
+[106]: https://img.shields.io/badge/Lib_Docs-olive?style=flat-square
 [906]: https://github.com/easyscience/EasyDiffractionLibDocs
-[107]: https://img.shields.io/badge/EasyCrystallography-sienna?style=flat-squaree
-[907]: https://github.com/easyscience/easyCrystallography
-[108]: https://img.shields.io/badge/EasyApp-sienna?style=flat-square
-[908]: https://github.com/easyscience/easyApp
+[107]: https://img.shields.io/badge/EasyScience-sienna?style=flat-square
+[907]: https://github.com/easyscience/EasyScience
+[108]: https://img.shields.io/badge/EasyCrystallography-sienna?style=flat-square
+[908]: https://github.com/easyscience/easyCrystallography
+[109]: https://img.shields.io/badge/EasyApp-sienna?style=flat-square
+[909]: https://github.com/easyscience/easyApp
 
-## [![EasyDiffractionApp][101]][901] [![EasyDiffractionBeta][102]][902] [![EasyDiffractionLib][103]][903] [![EasyDiffractionWww][104]][904] [![EasyDiffractionAppDocs][105]][905] [![EasyDiffractionLibDocs][106]][906] [![EasyCrystallography][107]][907] [![EasyApp][108]][908]
+[![EasyDiffractionApp][101]][901] [![EasyDiffractionBeta][102]][902] [![EasyDiffractionLib][103]][903] [![EasyDiffractionWww][104]][904] [![EasyDiffractionAppDocs][105]][905] [![EasyDiffractionLibDocs][106]][906] [![EasyScience][107]][907] [![EasyCrystallography][108]][908] [![EasyApp][109]][909]
 
-# EasyDiffraction project
+# EasyDiffraction
 
 Launching point for the EasyDiffraction family of repositories
 

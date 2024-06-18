@@ -1,13 +1,23 @@
-# EasyDiffraction project
+[101]: https://img.shields.io/badge/EasyDiffractionApp-blue?style=flat-square
+[901]: https://github.com/easyscience/easyDiffractionApp
+[102]: https://img.shields.io/badge/EasyDiffractionBeta-blue?style=flat-square
+[902]: https://github.com/easyscience/EasyDiffractionBeta
+[103]: https://img.shields.io/badge/EasyDiffractionLib-blue?style=flat-square
+[903]: https://github.com/easyscience/EasyDiffractionLib
+[104]: https://img.shields.io/badge/EasyDiffractionWww-olive?style=flat-square
+[904]: https://github.com/easyscience/EasyDiffractionWww
+[105]: https://img.shields.io/badge/EasyDiffractionAppDocs-olive?style=flat-square
+[905]: https://github.com/easyscience/EasyDiffractionAppDocs
+[106]: https://img.shields.io/badge/EasyDiffractionLibDocs-olive?style=flat-square
+[906]: https://github.com/easyscience/EasyDiffractionLibDocs
+[107]: https://img.shields.io/badge/EasyCrystallography-sienna?style=flat-squaree
+[907]: https://github.com/easyscience/easyCrystallography
+[108]: https://img.shields.io/badge/EasyApp-sienna?style=flat-square
+[908]: https://github.com/easyscience/easyApp
 
-![https://github.com/easyscience/easyDiffractionApp](https://img.shields.io/badge/EasyDiffractionApp-blue?style=flat-square)
-![https://github.com/easyscience/EasyDiffractionBeta](https://img.shields.io/badge/EasyDiffractionBeta-blue?style=flat-square) 
-![https://github.com/easyscience/easyDiffractionLib](https://img.shields.io/badge/EasyDiffractionLib-blue?style=flat-square) 
-![https://github.com/easyscience/EasyDiffractionWww](https://img.shields.io/badge/EasyDiffractionWww-olive?style=flat-square) 
-![https://github.com/easyscience/EasyDiffractionAppDocs](https://img.shields.io/badge/EasyDiffractionAppDocs-olive?style=flat-square) 
-![https://github.com/easyscience/EasyDiffractionLibDocs](https://img.shields.io/badge/EasyDiffractionLibDocs-olive?style=flat-square)
-![https://github.com/easyscience/easyCrystallography](https://img.shields.io/badge/EasyCrystallography-sienna?style=flat-square) 
-![https://github.com/easyscience/easyApp](https://img.shields.io/badge/EasyApp-sienna?style=flat-square) 
+## [![EasyDiffractionApp][101]][901] [![EasyDiffractionBeta][102]][902] [![EasyDiffractionLib][103]][903] [![EasyDiffractionWww][104]][904] [![EasyDiffractionAppDocs][105]][905] [![EasyDiffractionLibDocs][106]][906] [![EasyCrystallography][107]][907] [![EasyApp][108]][908]
+
+# EasyDiffraction project
 
 Launching point for the EasyDiffraction family of repositories
 

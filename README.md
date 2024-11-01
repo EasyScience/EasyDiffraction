@@ -23,19 +23,19 @@ This is a set of links to other repositories that are part of the [EasyDiffracti
 
 ## Source code
 
-* [EasyDiffractionApp](https://github.com/EasyScience/easyDiffractionApp) - main repository of GUI-application, containing all finalised, production-ready code.   
-* [EasyDiffractionBeta](https://github.com/EasyScience/EasyDiffractionBeta) - beta version of the GUI application, mainly for testing new features and implementations.  
-* [EasyDiffractionLib](https://github.com/EasyScience/ЕasyDiffractionLib) - core library available via Jupyter Notebook/Python. 
+* [EasyDiffractionLib](https://github.com/EasyScience/ЕasyDiffractionLib) - core Python library, the foundation of EasyDiffraction. 
+* [EasyDiffractionApp](https://github.com/EasyScience/easyDiffractionApp) - main repository of EasyDiffraction GUI application.   
+* [EasyDiffractionBeta](https://github.com/EasyScience/EasyDiffractionBeta) - beta version of the GUI application, mainly for testing new features.  
 
 ## Documentation
 
-* [EasyDiffractionWww](https://github.com/EasyScience/EasyDiffractionWww) - content for the main EasyDiffraction website https://easydiffraction.org  
-* [EasyDiffractionAppDocs](https://github.com/EasyScience/EasyDiffractionAppDocs) - documentation detailing the usage, installation, and guides for EasyDiffraction GUI-application.  
-* [EasyDiffractionLibDocs](https://github.com/EasyScience/EasyDiffractionLibDocs) - documentation for EasyDiffraction library, detailing API references, architectural design, and more.  
+* [EasyDiffractionWww](https://github.com/EasyScience/EasyDiffractionWww) - content for the main website https://easydiffraction.org  
+* [EasyDiffractionAppDocs](https://github.com/EasyScience/EasyDiffractionAppDocs) - user documentation for the EasyDiffraction GUI application.  
+* [EasyDiffractionLibDocs](https://github.com/EasyScience/EasyDiffractionLibDocs) - user documentation for the EasyDiffraction Python library.  
 
 ## Main dependencies
 
 * [EasyScience](https://github.com/EasyScience/EasyScience) - the foundation of the EasyScience family of projects.
-* [EasyCrystallography](https://github.com/EasyScience/easyCrystallography) - library for the generation and manipulation of crystal structures.  
+* [EasyCrystallography](https://github.com/EasyScience/easyCrystallography) - library for generating and manipulating crystal structures.  
 * [EasyApp](https://github.com/EasyScience/easyApp) - application skeleton for the EasyScience framework, written in QML.  
 

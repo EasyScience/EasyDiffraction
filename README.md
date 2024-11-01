@@ -29,7 +29,7 @@ This is a set of links to other repositories that are part of the [EasyDiffracti
 
 ## Documentation
 
-* [EasyDiffractionWww](https://github.com/EasyScience/EasyDiffractionWww) - content for the main website
+* [EasyDiffractionWww](https://github.com/EasyScience/EasyDiffractionWww) - content for the main website.
 * [EasyDiffractionAppDocs](https://github.com/EasyScience/EasyDiffractionAppDocs) - user documentation for the EasyDiffraction GUI application.  
 * [EasyDiffractionLibDocs](https://github.com/EasyScience/EasyDiffractionLibDocs) - user documentation for the EasyDiffraction Python library.  
 

@@ -23,7 +23,7 @@ This is a set of links to other repositories that are part of the [EasyDiffracti
 
 ## Source code
 
-* [EasyDiffractionLib](https://github.com/EasyScience/ЕasyDiffractionLib) - core Python library, the foundation of EasyDiffraction. 
+* [EasyDiffractionLib](https://github.com/EasyScience/EasyDiffractionLib) - core Python library, the foundation of EasyDiffraction. 
 * [EasyDiffractionApp](https://github.com/EasyScience/easyDiffractionApp) - main repository of EasyDiffraction GUI application.   
 * [EasyDiffractionBeta](https://github.com/EasyScience/EasyDiffractionBeta) - beta version of the GUI application, mainly for testing new features.  
 

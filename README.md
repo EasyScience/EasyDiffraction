@@ -1,41 +1,63 @@
-[101]: https://img.shields.io/badge/App-blue?style=flat-square
-[901]: https://github.com/easyscience/easyDiffractionApp
-[102]: https://img.shields.io/badge/AppBeta-blue?style=flat-square
-[902]: https://github.com/easyscience/EasyDiffractionBeta
-[103]: https://img.shields.io/badge/Lib-blue?style=flat-square
-[903]: https://github.com/easyscience/EasyDiffractionLib
-[104]: https://img.shields.io/badge/Website-olive?style=flat-square
-[904]: https://github.com/easyscience/EasyDiffractionWww
-[105]: https://img.shields.io/badge/App_Docs-olive?style=flat-square
-[905]: https://github.com/easyscience/EasyDiffractionAppDocs
-[106]: https://img.shields.io/badge/Lib_Docs-olive?style=flat-square
-[906]: https://github.com/easyscience/EasyDiffractionLibDocs
-[107]: https://img.shields.io/badge/EasyScience-sienna?style=flat-square
-[907]: https://github.com/easyscience/EasyScience
-[108]: https://img.shields.io/badge/EasyCrystallography-sienna?style=flat-square
-[908]: https://github.com/easyscience/easyCrystallography
-[109]: https://img.shields.io/badge/EasyApp-sienna?style=flat-square
-[909]: https://github.com/easyscience/easyApp
+<!-- prettier-ignore-start -->
+[![][AppBadge]][EasyDiffractionApp] 
+[![][BetaBadge]][EasyDiffractionBeta]
+[![][LibBadge]][EasyDiffractionLib] 
+[![][WwwBadge]][EasyDiffractionWww]
+[![][AppDocsBadge]][EasyDiffractionAppDocs]
+[![][LibDocsBadge]][EasyDiffractionLibDocs] 
+[![][EasyScienceBadge]][EasyScience]
+[![][EasyCrystallographyBadge]][EasyCrystallography]
+[![][EasyAppBadge]][EasyApp]
+<!-- prettier-ignore-end -->
 
-[![EasyDiffractionApp][101]][901] [![EasyDiffractionBeta][102]][902] [![EasyDiffractionLib][103]][903] [![EasyDiffractionWww][104]][904] [![EasyDiffractionAppDocs][105]][905] [![EasyDiffractionLibDocs][106]][906] [![EasyScience][107]][907] [![EasyCrystallography][108]][908] [![EasyApp][109]][909]
+![](https://raw.githubusercontent.com/EasyScience/EasyDiffraction/master/resources/images/easydiffraction-logo_lightmode.svg#gh-light-mode-only)
+![](https://raw.githubusercontent.com/EasyScience/EasyDiffraction/master/resources/images/easydiffraction-logo_darkmode.svg#gh-dark-mode-only)
 
-This is a set of links to other repositories that are part of the [EasyDiffraction](https://easydiffraction.org) project, which is based on the [EasyScience](https://easyscience.software) framework.
+This is a set of links to other repositories that are part of the
+EasyDiffraction project, which is based on the EasyScience framework.
 
 ## Source code
 
-* [EasyDiffractionLib](https://github.com/EasyScience/EasyDiffractionLib) - core Python library, the foundation of EasyDiffraction. 
-* [EasyDiffractionApp](https://github.com/EasyScience/easyDiffractionApp) - main repository of EasyDiffraction GUI application.   
-* [EasyDiffractionBeta](https://github.com/EasyScience/EasyDiffractionBeta) - beta version of the GUI application, mainly for testing new features.  
+- [EasyDiffractionLib] - Core Python library, the foundation of EasyDiffraction.
+- [EasyDiffractionApp] - Main repository of EasyDiffraction GUI application.
+- [EasyDiffractionBeta] - Beta version of the GUI application, mainly for
+  testing new features.
 
 ## Documentation
 
-* [EasyDiffractionWww](https://github.com/EasyScience/EasyDiffractionWww) - content for the main website.
-* [EasyDiffractionAppDocs](https://github.com/EasyScience/EasyDiffractionAppDocs) - user documentation for the EasyDiffraction GUI application.  
-* [EasyDiffractionLibDocs](https://github.com/EasyScience/EasyDiffractionLibDocs) - user documentation for the EasyDiffraction Python library.  
+- [EasyDiffractionWww] - Content for the main website.
+- [EasyDiffractionAppDocs] - User documentation for the EasyDiffraction GUI
+  application.
+- [EasyDiffractionLibDocs] - User documentation for the EasyDiffraction Python
+  library.
 
 ## Main dependencies
 
-* [EasyScience](https://github.com/EasyScience/EasyScience) - the foundation of the EasyScience family of projects.
-* [EasyCrystallography](https://github.com/EasyScience/easyCrystallography) - library for generating and manipulating crystal structures.  
-* [EasyApp](https://github.com/EasyScience/easyApp) - application skeleton for the EasyScience framework, written in QML.  
+- [EasyScience] - The foundation of the EasyScience family of projects.
+- [EasyCrystallography] - Library for generating and manipulating crystal
+  structures.
+- [EasyApp] - Application skeleton for the EasyScience framework, written in
+  QML.
 
+<!-- prettier-ignore-start -->
+<!-- main links -->
+[EasyApp]: https://github.com/EasyScience/EasyApp
+[EasyCrystallography]: https://github.com/EasyScience/easyCrystallography
+[EasyDiffractionApp]: https://github.com/EasyScience/easyDiffractionApp
+[EasyDiffractionAppDocs]: https://github.com/EasyScience/EasyDiffractionAppDocs
+[EasyDiffractionBeta]: https://github.com/EasyScience/EasyDiffractionBeta
+[EasyDiffractionLib]: https://github.com/EasyScience/EasyDiffractionLib
+[EasyDiffractionLibDocs]: https://github.com/EasyScience/EasyDiffractionLibDocs
+[EasyDiffractionWww]: https://github.com/EasyScience/EasyDiffractionWww
+[EasyScience]: https://github.com/EasyScience/EasyScience
+<!-- badges -->
+[AppBadge]: https://img.shields.io/badge/App-blue?style=flat-square
+[BetaBadge]: https://img.shields.io/badge/AppBeta-blue?style=flat-square
+[LibBadge]: https://img.shields.io/badge/Lib-blue?style=flat-square
+[WwwBadge]: https://img.shields.io/badge/Website-olive?style=flat-square
+[AppDocsBadge]: https://img.shields.io/badge/App_Docs-olive?style=flat-square
+[LibDocsBadge]: https://img.shields.io/badge/Lib_Docs-olive?style=flat-square
+[EasyScienceBadge]: https://img.shields.io/badge/EasyScience-sienna?style=flat-square
+[EasyCrystallographyBadge]: https://img.shields.io/badge/EasyCrystallography-sienna?style=flat-square
+[EasyAppBadge]: https://img.shields.io/badge/EasyApp-sienna?style=flat-square
+<!-- prettier-ignore-end -->

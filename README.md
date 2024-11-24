@@ -1,17 +1,17 @@
 <!-- prettier-ignore-start -->
-[![][AppBadge]][EasyDiffractionApp] 
+[![][AppBadge]][EasyDiffractionApp]
 [![][BetaBadge]][EasyDiffractionBeta]
-[![][LibBadge]][EasyDiffractionLib] 
+[![][LibBadge]][EasyDiffractionLib]
 [![][WwwBadge]][EasyDiffractionWww]
 [![][AppDocsBadge]][EasyDiffractionAppDocs]
-[![][LibDocsBadge]][EasyDiffractionLibDocs] 
+[![][LibDocsBadge]][EasyDiffractionLibDocs]
 [![][EasyScienceBadge]][EasyScience]
 [![][EasyCrystallographyBadge]][EasyCrystallography]
 [![][EasyAppBadge]][EasyApp]
 <!-- prettier-ignore-end -->
 
-![](https://raw.githubusercontent.com/EasyScience/EasyDiffraction/master/resources/images/easydiffraction-logo_lightmode.svg#gh-light-mode-only)
-![](https://raw.githubusercontent.com/EasyScience/EasyDiffraction/master/resources/images/easydiffraction-logo_darkmode.svg#gh-dark-mode-only)
+![](https://raw.githubusercontent.com/EasyScience/EasyDiffraction/master/resources/images/EasyDiffraction-logo_lightmode.svg#gh-light-mode-only)
+![](https://raw.githubusercontent.com/EasyScience/EasyDiffraction/master/resources/images/EasyDiffraction-logo_darkmode.svg#gh-dark-mode-only)
 
 This is a set of links to other repositories that are part of the
 EasyDiffraction project, which is based on the EasyScience framework.

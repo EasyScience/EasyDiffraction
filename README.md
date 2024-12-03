@@ -10,7 +10,17 @@
 [![][EasyAppBadge]][EasyApp]
 <!-- prettier-ignore-end -->
 
-![EasyDiffraction Logo Light Mode]![EasyDiffraction Logo Dark Mode]
+<!-- project logo -->
+<p align='left'>
+  <picture>
+    <!-- light mode logo -->
+    <source media='(prefers-color-scheme: light)' srcset='https://raw.githubusercontent.com/EasyScience/EasyDiffraction/master/resources/logo/EasyDiffraction-logo_lightmode.svg'>
+    <!-- dark mode logo -->
+    <source media='(prefers-color-scheme: dark)' srcset='https://raw.githubusercontent.com/EasyScience/EasyDiffraction/master/resources/logo/EasyDiffraction-logo_darkmode.svg'>
+    <!-- default logo == light mode logo -->
+    <img src='https://raw.githubusercontent.com/EasyScience/EasyDiffraction/master/resources/logo/EasyDiffraction-logo_lightmode.svg' alt='EasyDiffraction'>
+  </picture>
+</p>
 
 This is a set of links to other repositories that are part of the
 EasyDiffraction project, which is based on the EasyScience framework.
@@ -40,8 +50,7 @@ EasyDiffraction project, which is based on the EasyScience framework.
 
 <!-- prettier-ignore-start -->
 <!-- logo -->
-[EasyDiffraction Logo Light Mode]: https://raw.githubusercontent.com/EasyScience/EasyDiffraction/master/resources/logo/EasyDiffraction-logo_lightmode.svg#gh-light-mode-only
-[EasyDiffraction Logo Dark Mode]: https://raw.githubusercontent.com/EasyScience/EasyDiffraction/master/resources/logo/EasyDiffraction-logo_darkmode.svg#gh-dark-mode-only
+[EasyDiffraction Logo]: resources/logo/test.svg
 <!-- main links -->
 [EasyApp]: https://github.com/EasyScience/EasyApp
 [EasyCrystallography]: https://github.com/EasyScience/easyCrystallography

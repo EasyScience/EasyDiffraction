@@ -20,7 +20,7 @@ jobs:
         shell: bash
         run: |
           echo "BRANCH_NAME=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
-          echo "PROJECT_NAME=EasyDiffraction" >> $GITHUB_ENV
+          echo "REPOSITORY_NAME=diffraction" >> $GITHUB_ENV
           echo "PROJECT_EMAIL=support@easydiffraction.org" >> $GITHUB_ENV
 
       - name: Download dependences
@@ -33,7 +33,7 @@ jobs:
       - name: Create config
         working-directory: ../EasySite
         run: |
-          echo '{"project": "${{ env.PROJECT_NAME }}"}' > project.json
+          echo '{"project": "${{ env.REPOSITORY_NAME }}"}' > project.json
 
       - name: Install npm dependencies
         working-directory: ../EasySite

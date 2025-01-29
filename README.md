@@ -15,7 +15,7 @@
 
 **EasyDiffraction** is available in two forms:
 - 💻 [EasyDiffraction Application] – A cross-platform desktop application.
-- 📦 [EasyDiffraction Library] – A Python library for integrating diffraction analysis into scripts and Jupyter notebooks.
+- 📦 [EasyDiffraction Library] – A Python library designed for use in scripts and Jupyter notebooks.
 
 ## **About This Repository**
 This repository serves as the **central hub** for the EasyDiffraction family of repositories and provides:

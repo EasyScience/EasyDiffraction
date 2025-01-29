@@ -1,0 +1,59 @@
+name: build site
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Cancel previous workflow runs
+        uses: n1hility/cancel-previous-runs@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check-out repository
+        uses: actions/checkout@v4
+
+      - name: Declare env variables on push only
+        if: github.event_name == 'push'
+        shell: bash
+        run: |
+          echo "BRANCH_NAME=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+          echo "PROJECT_NAME=EasyDiffraction" >> $GITHUB_ENV
+          echo "PROJECT_EMAIL=support@easydiffraction.org" >> $GITHUB_ENV
+
+      - name: Download dependences
+        working-directory: ..
+        run: git clone ${GITHUB_SERVER_URL}/EasyScience/EasySite
+
+      - name: Add assets
+        run: cp -R assets ../EasySite/src/copy
+
+      - name: Create config
+        working-directory: ../EasySite
+        run: |
+          echo '{"project": "${{ env.PROJECT_NAME }}"}' > project.json
+
+      - name: Install npm dependencies
+        working-directory: ../EasySite
+        run: npm install
+
+      - name: Build site
+        working-directory: ../EasySite
+        run: npm run build
+
+      - name: Change email in contact.php
+        working-directory: ../EasySite
+        run: node_modules/replace-in-file/bin/cli.js contact@easyscience.software ${{ env.PROJECT_EMAIL }} public/php/contact.php
+
+      - name: Copy built site to default working directory
+        run: cp -R ../EasySite/public .
+
+      - name: Deploy built site to 'public_...' branch
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          GITHUB_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
+          REPO: self
+          BRANCH: public_${{ env.BRANCH_NAME }}
+          FOLDER: public

@@ -22,7 +22,7 @@ jobs:
 
   # Job 1: Build the static files for the documentation site
   build-page:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
 
     steps:
       - name: Cancel previous workflow runs
@@ -60,7 +60,11 @@ jobs:
       - name: Copy built site to default working directory
         run: cp -R ../EasySite/public .
 
-      - name: Setup Pages
+      # Set up the Pages action to configure the static files to be deployed
+      # NOTE: The repository must have GitHub Pages enabled and configured to build using GitHub Actions
+      # This can be done via https://github.com/EasyScience/diffraction/settings/pages
+      # Select: Build and deploy - Source - GitHub Actions
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
       # Upload the static files from the public/ directory to be used in the next job

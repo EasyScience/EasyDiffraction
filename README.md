@@ -11,18 +11,22 @@
 
 **EasyDiffraction** is a software tool for calculating powder diffraction patterns based on structural models and refining their parameters against experimental data.
 
-## **Distribution**
+## Distribution
 
 **EasyDiffraction** is available in two forms:
+
 - 💻 [EasyDiffraction Application] – A cross-platform desktop application.
 - 📦 [EasyDiffraction Library] – A Python library designed for use in scripts and Jupyter notebooks.
 
-## **About This Repository**
+## About This Repository
+
 This repository serves as the **central hub** for the EasyDiffraction family of repositories and provides:
+
 - The source for the **project landing page** [http://easydiffraction.org](http://easydiffraction.org).
 - A place for [Discussions] relevant to both the 💻 [EasyDiffraction Application] and 📦 [EasyDiffraction Library].
 
-## **Main Dependencies**
+## Main Dependencies
+
 - [EasyScience] – Core building blocks for Python libraries in the EasyScience ecosystem.
 - [EasyCrystallography] – Backend crystallographic tools for structure analysis.
 - [EasyApp] – GUI components for building scientific desktop applications.

@@ -33,32 +33,46 @@ jobs:
       - name: Check-out repository
         uses: actions/checkout@v4
 
+      # Download the template of the project landing page from the EasyScience/templates-page repository
       - name: Download dependencies
         working-directory: ..
-        run: git clone ${GITHUB_SERVER_URL}/EasyScience/EasySite
+        run: git clone ${GITHUB_SERVER_URL}/EasyScience/templates-page
 
+      # Add the assets from the current project to the downloaded templates-page directory
       - name: Add assets
-        run: cp -R assets ../EasySite/src/copy
+        run: cp -R assets ../templates-page/src/copy
 
+      # Create a config file with the repository name. This is used in the templates-page
       - name: Create config
-        working-directory: ../EasySite
+        working-directory: ../templates-page
         run: |
           echo '{"project": "${{ env.REPOSITORY_NAME }}"}' > project.json
 
+      # Install npm dependencies needed to build the site in the templates-page directory
       - name: Install npm dependencies
-        working-directory: ../EasySite
-        run: npm install
+        #working-directory: ../templates-page
+        run: |
+          cd ../templates-page
+          npm install
 
+      # Build the site in the templates-page directory
       - name: Build site
-        working-directory: ../EasySite
-        run: npm run build
+        #working-directory: ../templates-page
+        run: |
+          cd ../templates-page
+          npm run build
 
+      # Change the email in the contact.php file in the templates-page directory
       - name: Change email in contact.php
-        working-directory: ../EasySite
-        run: node_modules/replace-in-file/bin/cli.js contact@easyscience.software ${{ env.PROJECT_EMAIL }} public/php/contact.php
+        #working-directory: ../templates-page
+        run: |
+          cd ../templates-page
+          node_modules/replace-in-file/bin/cli.js contact@easyscience.software ${{ env.PROJECT_EMAIL }} public/php/contact.php
 
+      # Copy the built site from the templates-page directory (../templates-page/public/) to
+      # the current project directory (site/)
       - name: Copy built site to default working directory
-        run: cp -R ../EasySite/public .
+        run: cp -R ../templates-page/public/ site/
 
       # Set up the Pages action to configure the static files to be deployed
       # NOTE: The repository must have GitHub Pages enabled and configured to build using GitHub Actions
@@ -67,14 +81,14 @@ jobs:
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
-      # Upload the static files from the public/ directory to be used in the next job
+      # Upload the static files from the site/ directory to be used in the next job
       # This artifact is named github-pages and is a single gzip archive containing a single tar file
       # The artifact is then used in the next job by actions/deploy-pages to deploy the static files to GitHub Pages
       # Unfortunately, the artifact is not available for download, so extra steps below are needed to do similar things
       - name: Upload built site as artifact (for github-pages, all branches)
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public/
+          path: site/
 
       # Upload the static files from the site/ directory to be used in the next job
       # This extra step is needed to allow the download of the artifact in the next job
@@ -84,7 +98,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: artifact # name of the artifact (without the extension zip)
-          path: public/
+          path: site/
           if-no-files-found: "error"
           compression-level: 0
 
@@ -116,7 +130,7 @@ jobs:
     steps:
       # Deploy the static files created in the previous job to GitHub Pages
       # All branches are deployed to GitHub Pages and available at
-      # https://easyscience.github.io/EasyDiffractionLibDocs
+      # https://easyscience.github.io/diffraction
       # This is needed for debugging purposes
       - name: Deploy to easyscience.github.io/diffraction (all branches)
         uses: actions/deploy-pages@v4
@@ -126,7 +140,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:  # name or path are taken from the upload step of the previous job
           name: artifact
-          path: public/ # directory to extract downloaded zipped artifacts
+          path: site/ # directory to extract downloaded zipped artifacts
 
       # Push the site files created in the previous job to the 'easydiffraction.org' branch
       # This branch is used to deploy the site to the custom domain https://easydiffraction.org
@@ -139,4 +153,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
           REPO: self
           BRANCH: easydiffraction.org
-          FOLDER: public
+          FOLDER: site
